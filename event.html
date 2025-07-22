@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #391111b7;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px; 
+            background-image: url('images/background.jpg'); 
+            background-size: cover;
+            background-position: center; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            color: white; 
+        }
+ 
+        .event {
+            margin-bottom: 25px; 
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0; 
+            transform: translateY(20px); 
+            animation: pop-in 0.5s forwards;
+        }
+
+        @keyframes pop-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .event:hover {
+            transform: scale(1.02); 
+        }
+
+        .event img {
+            object-fit: cover;   
+            border-radius: 5px;  
+        }
+
+        .event h2 {
+            font-family: papyrus;
+            color: #d7c6b3;
+            margin: 0 0 10px;
+            font-size: 26px; 
+        }
+
+        .event p {
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .register-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none; 
+            font-size: 16px;
+            margin-top: 10px;
+        }
+                                                                                                                                         
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #cf7f7f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    <div class="container">
+        <div class="event" style="animation-delay: 0.4s;">
+            <img src="images/event1.jpeg" alt="Educational Support" style="width: 100%; height: 300px;">
+            <h2>Comprehensive Educational Support</h2>
+            <p>Join us for programs designed to enhance children's educational experiences and provide necessary resources. Our workshops focus on improving literacy, numeracy, and critical thinking skills.</p>
+            <p><strong>Date:</strong> March 15, 2024<br>
+            <strong>Location:</strong> Community Learning Center<br>
+            <strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+            <a href="../Exp1/index.html" class="register-button">Register Now</a>
+        </div>
+        <div class="event" style="animation-delay: 1s;">
+            <img src="images/eventhealth.jpg" alt="Healthcare Services" style="width: 60%; height: 250px;">
+            <h2>Essential Healthcare Services</h2>
+            <p>Participate in our medical check-ups, vaccinations, and health workshops to promote well-being among children. Our healthcare team will provide comprehensive medical services, including physical examinations and health education.</p>
+            <p><strong>Date:</strong> April 22, 2024<br>
+            <strong>Location:</strong> Local Health Clinic<br>
+            <strong>Time:</strong> 9:00 AM - 1:00 PM</p>
+            <a href="../Exp1/index.html" class="register-button">Register Now</a>
+        </div>
+        <div class="event" style="animation-delay: 1.5s;">
+            <img src="images/eventart.jpeg" alt="Art for a Cause" style="width: 100%; height: 175px;">
+            <h2>Art for a Cause Exhibition</h2>
+            <p>Explore the creativity of our young artists at our annual art exhibition. This event showcases artwork created by children from various backgrounds, highlighting their talents and stories.</p>
+            <p><strong>Date:</strong> July 25, 2024<br>
+            <strong>Location:</strong> Local Art Gallery<br>
+            <strong>Time:</strong> 5:00 PM - 9:00 PM</p>
+            <a href="../Exp1/index.html" class="register-button">Register Now</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Your Organization Name. All rights reserved.
+    </footer>
+</body>
+</html>

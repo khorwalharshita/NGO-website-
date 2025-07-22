@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umeed Organization</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica,sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            height: 200px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            margin:  15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FF9800; 
+        }
+
+        .cta-buttons {
+            display: flex;
+        }
+
+        .cta-buttons a {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .donate-btn {
+            background-color: #FF9800;
+            color: white;
+        }
+
+        .donate-btn:hover {
+            background-color: #FB8C00;
+        }
+
+        .join-btn {
+            background-color: #F44336;
+            color: white;
+        }
+
+        .join-btn:hover {
+            background-color: #E53935; 
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('images/one.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+
+        .hero-content {
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .hero .buttons a {
+            margin: 10px;
+            padding: 10px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .learn-more {
+            background-color: #03A9F4;
+            color: white;
+        }
+
+        .learn-more:hover {
+            background-color: #039BE5; 
+        }
+
+        .get-involved {
+            background-color: #8BC34A;
+            color: white;
+        }
+
+        .get-involved:hover {
+            background-color: #7CB342; 
+        }
+
+        /* Stats Section */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .stats div {
+            width: 22%;
+        }
+
+        .stats h2 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .stats p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Programs Section */
+        .programs {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .programs h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .programs-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+        }
+
+        .program {
+            width: 30%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0; 
+            transition: transform 0.3s;
+        }
+
+        .program:hover {
+            transform: translateY(-5px);
+        }
+
+        .program img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .program h3 {
+            margin: 20px 0 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .program p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <img src="images/logo.jpg" alt="Umeed Logo">
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Programs</a>
+            <a href="#">Get Involved</a>
+            <a href="event.html">Events</a>
+        </nav>
+        <div class="cta-buttons">
+            <a href="donation.html" class="donate-btn">Donate Now</a>
+            <a href="Register/index.html" class="join-btn">Register</a>
+        </div>
+        
+    </header>
+
+   
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Umeedo ka Ghar</h1>
+            <p>Welcome to Umeed! We are dedicated to providing essential support to children in need. Join us in making a difference and building a brighter future.</p>
+            <div class="buttons">
+                <a href="#" class="learn-more">Learn More</a>
+                <a href="login/index.html" class="get-involved">Login In</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="stats">
+        <div>
+            <h2>2023 Years of Service</h2>
+            <p>Since our inception, we have dedicated ourselves to uplifting underprivileged children.</p>
+        </div>
+        <div>
+            <h2>10000 Children Helped</h2>
+            <p>Positively impacting lives through various programs.</p>
+        </div>
+        <div>
+            <h2>100 Volunteers Engaged</h2>
+            <p>Our dedicated volunteers play a crucial role in our mission.</p>
+        </div>
+        <div>
+            <h2>50 Programs Offered</h2>
+            <p>Tailored to the needs of children, providing them with essential support.</p>
+        </div>
+    </section>
+
+   
+    <section class="programs">
+        <h2>Explore Our Life-Changing Programs</h2>
+        <div class="programs-container">
+            <div class="program">
+                <img src="images/study.jpg" alt="Comprehensive Educational Support">
+                <h3>Comprehensive Educational Support</h3>
+                <p>We offer programs designed to support children's education.</p>
+            </div>
+            <div class="program">
+                <img src="images/doctor.webp" alt="Essential Healthcare Services">
+                <h3>Essential Healthcare Services</h3>
+                <p>Providing medical check-ups, vaccinations, and health care.</p>
+            </div>
+            <div class="program">
+                <img src="images/health.jpeg" alt="Emotional Support Program">
+                <h3>Emotional Support Program</h3>
+                <p>Focusing on counseling and mentorship for children in need.</p>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 Umeed. All rights reserved.</p>
+    </footer>
+</body>
+</html>

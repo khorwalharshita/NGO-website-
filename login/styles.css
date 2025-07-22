@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/login.jpg'); /* Add gradient overlay */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    backdrop-filter: blur(15px); /* Stronger blur effect */
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Light border for a cleaner look */
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #fff; /* White text color to contrast with the background */
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #fff; /* White text for labels */
+}
+
+input {
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Light border for input fields */
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for input fields */
+    color: #fff; /* White text for input */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(76, 175, 80, 0.8); /* Green with slight transparency */
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(76, 175, 80, 1); /* Fully opaque on hover */
+}
+
+.forgot-password {
+    margin-top: 15px;
+    color: #fff; /* White color for the "Forgot Password?" link */
+}
+

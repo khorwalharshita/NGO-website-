@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Our Organization</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: rgb(135, 184, 229);
+            margin-left: 20px;
+            padding: 60px;
+        }
+
+        form {
+            width: 55%;
+            margin: 0 auto;
+            background-color: rgba(247, 236, 236, 0.8); 
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            text-decoration: underline;
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+    font-family: papyrus;
+    text-align: center;
+    font-size: 18px; 
+    color: #333;
+}
+
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 6px 8px;
+            border: none;
+            border-radius: 4px;
+            width: 20%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        body::before {
+            content: '';
+            background-image: url('images/donation.jpg'); 
+            background-size: cover;
+            background-position: center;
+            opacity: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+           
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Make a Donation</h1>  
+        <h2>We make a living by what we get. We make a life by what we give.</h2>     
+        <p>Enter your Name:<br>
+        <input type="text" required><br><br>
+
+        Donation Amount:<br>
+        <input type="number" required><br><br>
+        
+        Email:<br>
+        <input type="email" required><br><br>
+        
+        Message (optional):<br>
+        <textarea rows="3" style="width: 70%; border-radius: 3px;"></textarea><br><br>
+        
+        Payment via UPI :
+        (Scan and Pay)<br><br>
+        <img src ="images/scan.jpg" height="120" width="120">
+        <br><br>
+        
+        <input type="submit" value="Donate">
+    </form>
+</body>
+</html>
